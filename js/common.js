@@ -421,7 +421,7 @@
 			$list.append(
 		        $('<li class="list-group-item" />')
 		        .append(
-	                $('<input class="form-check-input me-1" />').attr({
+	                $('<input class="form-check-input" />').attr({
                          id:    'venue-' + index
                         ,name:  venue.name
                         ,value: venue.name
@@ -456,7 +456,7 @@
             $types.append(
 		        $('<li class="list-group-item" />')
 		        .append(
-	                $('<input class="form-check-input me-1" />').attr({
+	                $('<input class="form-check-input" />').attr({
                          id:    'venue-type-' + index
                         ,name:  venue
                         ,value: venue
@@ -474,7 +474,7 @@
 
 		        ).append(
 	                $('<label />').attr({
-	                    'for':  'venue-' + index
+	                    'for':  'venue-type-' + index
 	                })
 	                .text( venue )
 		        )
