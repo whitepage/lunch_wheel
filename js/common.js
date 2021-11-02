@@ -1,9 +1,115 @@
 (function ($){
     var venues =  [
-        {"name":"1900 Mexican Grill", "type":"Mexican"},
-        {"name":"300 East", "type":"American/Upscale"},
-        {"name":"Angry Ale's", "type":"American/Pub "},
-        {"name":"Azteca", "type":"Mexican"},{"name":"Bedder Bedder and Moore", "type":"Sandwiches, Salads, Soups"},{"name":"Boading", "type":"Chinese"},{"name":"Brazwell's Premium Pub", "type":"American/Pub "},{"name":"Brio Tuscan Grille", "type":"Italian"},{"name":"Brixx", "type":"Pizza/Salads"},{"name":"Café at 6100", "type":"Home Cooking"},{"name":"California Pizza Kitchen", "type":"Pizza/Salads"},{"name":"Chick-Fil-A", "type":"Fast Food"},{"name":"City Tavern", "type":"American/Upscale"},{"name":"Copper", "type":"Indian"},{"name":"Cowfish", "type":"Sushi"},{"name":"Duckworth's", "type":"American/Pub "},{"name":"Eddie's Place", "type":"American/Pub "},{"name":"El Camino", "type":"Mexican"},{"name":"Fairview Plaza Restaurant", "type":"Home Cooking"},{"name":"Firebird's Wood Fired Grill", "type":"American/Upscale"},{"name":"Firehouse Subs", "type":"Sandwiches, Salads, Soups"},{"name":"Flying Biscuit", "type":"American/Fast"},{"name":"Fuel", "type":"Pizza"},{"name":"Good Food on Montford", "type":"American/Upscale"},{"name":"Harper's Restaurant", "type":"American/Upscale"},{"name":"Hawthorne's Pizza", "type":"Pizza/Italian"},{"name":"Luisa's Brick Oven Pizza", "type":"Pizza/Italian"},{"name":"Maverick Rock Taco", "type":"Mexican"},{"name":"McAllister's", "type":"Sandwiches, Salads, Soups"},{"name":"Mellow Mushroom", "type":"Pizza/Salads"},{"name":"Moe's", "type":"Mexican"},{"name":"Moosehead Grill", "type":"American/Pub "},{"name":"Paco's Tacos and Tequila", "type":"Mexican"},{"name":"Panera ", "type":"Sandwiches, Salads, Soups"},{"name":"PF Chang's", "type":"Chinese"},{"name":"Portofinos", "type":"Pizza/Italian"},{"name":"Qdoba", "type":"Mexican"},{"name":"Rooster's Wood Fire Kitchen", "type":"American/Upscale"},{"name":"Rusty's Deli", "type":"Sandwiches, Salads, Soups"},{"name":"Taco Bell", "type":"Fast Food"},{"name":"Taco Mac", "type":"American/Pub "},{"name":"Terrace Café", "type":"American/Upscale"},{"name":"The Roasting Company", "type":"American/Fast"},{"name":"Village Tavern", "type":"American/Upscale"},{"name":"Which Wich?", "type":"Sandwiches, Salads, Soups"},{"name":"Zack's Hamburgers", "type":"American/Fast"}
+        {
+			"name": "등촌샤브칼국수",
+			"type": "면",
+			"descc": "고기추가 안하면 서운함"
+		  },
+		  {
+			"name": "후암편백",
+			"type": "고기",
+			"descc": "편백찜도 있지만 샤브샤브가 더 맛있음"
+		  },
+		  {
+			"name": "유키사키",
+			"type": null,
+			"descc": "가츠동, 스테이키동 빼고는 맛이없음"
+		  },
+		  {
+			"name": "오제제",
+			"type": null,
+			"descc": "돈까스 맛집. But 10시에 대기 걸어야함"
+		  },
+		  {
+			"name": "바스버거",
+			"type": null,
+			"descc": "맛있는 수제버거. 토핑이 풍부함"
+		  },
+		  {
+			"name": "죠우",
+			"type": null,
+			"descc": "깔끔한 일본 가정식"
+		  },
+		  {
+			"name": "가마솥족발순대국",
+			"type": null,
+			"descc": "국물이 아주 맑은 순대국집! 맛집이라 웨이팅이 있을지도 몰라요"
+		  },
+		  {
+			"name": "후암연어식당",
+			"type": null,
+			"descc": "연어삼합이 베스트이지만 점심땐 초밥이랑 파스타도 있어요"
+		  },
+		  {
+			"name": "오지차돌박이",
+			"type": null,
+			"descc": "차돌박이 정식 굿굿. 점심에도 고기를 구워먹을 수 있어요"
+		  },
+		  {
+			"name": "도동집",
+			"type": null,
+			"descc": "일명 이영자 맛집. 일찍가야 먹을 수 있는 곳!"
+		  },
+		  {
+			"name": "교동짬뽕",
+			"type": null,
+			"descc": "해장이 필요할 때!"
+		  },
+		  {
+			"name": "대독장",
+			"type": null,
+			"descc": "맛있는 김치찌개집! 세트메뉴가 좋아요"
+		  },
+		  {
+			"name": "서브웨이",
+			"type": null,
+			"descc": "다이어트 결심이 드는 날?"
+		  },
+		  {
+			"name": "홍콩중국요리",
+			"type": null,
+			"descc": "짜장면이 맛있는 곳"
+		  },
+		  {
+			"name": "메시야",
+			"type": null,
+			"descc": "다양한 돈까스를 만날 수 이는 곳. 대표메뉴는 김치돈까스!"
+		  },
+		  {
+			"name": "양귀비짬뽕",
+			"type": null,
+			"descc": "짬뽕과 마늘탕수육이 맛있는 곳"
+		  },
+		  {
+			"name": "동해오징어보쌈",
+			"type": null,
+			"descc": "매콤한게 땡기는날! 오징어보쌈과 오징어불고기가 맛있는 곳"
+		  },
+		  {
+			"name": "스시Zip",
+			"type": null,
+			"descc": "다양한 스시를 맛볼 수 있는 곳"
+		  },
+		  {
+			"name": "은하수닭갈비",
+			"type": null,
+			"descc": "맛있는 철판닭갈비! 볶음밥 필수"
+		  },
+		  {
+			"name": "모모키친",
+			"type": null,
+			"descc": "깔끔한 돈까스 맛집"
+		  },
+		  {
+			"name": "미니네칼국수",
+			"type": null,
+			"descc": "칼제비와 들깨칼국수가 인기!"
+		  },
+		  {
+			"name": "충무칼국수",
+			"type": null,
+			"descc": "칼국수집인데 보쌈이 맛있는 곳"
+		  }
     ];
     
     // Helpers
@@ -36,7 +142,7 @@
 // WHEEL!
 	var wheel = {
 		timerHandle : 0,
-		timerDelay : 33,
+		timerDelay : 20,
 
 		angleCurrent : 0,
 		angleDelta : 0,
@@ -51,7 +157,7 @@
 
 		seg_colors : [], // Cache of segments to colors
 		
-		maxSpeed : Math.PI / 16,
+		maxSpeed : Math.PI / 10,
 
 		upTime : 1000, // How long to spin up for (in ms)
 		downTime : 5000, // How long to slow down for (in ms)
@@ -69,7 +175,7 @@
 				wheel.spinStart = new Date().getTime();
 				wheel.maxSpeed = Math.PI / (16 + Math.random()); // Randomly vary how hard the spin is
 				wheel.frames = 0;
-				wheel.sound.play();
+				//wheel.sound.play();
 
 				wheel.timerHandle = setInterval(wheel.onTimerTick, wheel.timerDelay);
 			}
@@ -119,7 +225,7 @@
 		init : function(optionList) {
 			try {
 				wheel.initWheel();
-				wheel.initAudio();
+				// wheel.initAudio();
 				wheel.initCanvas();
 				wheel.draw();
 
@@ -188,15 +294,18 @@
                 len = wheel.segments.length,
                 winner;
 
-			ctx.lineWidth = 2;
+			ctx.lineWidth = 4;
 			ctx.strokeStyle = blackHex;
 			ctx.fillStyle = whiteHex;
 
 			ctx.beginPath();
 
-			ctx.moveTo(centerX - 20, 20 - 10);
-			ctx.lineTo(centerX + 10, 20 - 10);
-			ctx.lineTo(centerX - 5, 20 + 10);
+			//ctx.moveTo(centerX - 10, 20 - 10);
+			//ctx.lineTo(centerX + 10, 20 - 10);
+			//ctx.lineTo(centerX, 20 + 10);
+			ctx.moveTo(centerX + size - 20, centerY);
+			ctx.lineTo(centerX + size + 15, centerY - 10);
+			ctx.lineTo(centerX + size + 15, centerY + 10);
 			ctx.closePath();
 
 			ctx.stroke();
@@ -206,12 +315,14 @@
 			i = len - Math.floor((wheel.angleCurrent / doublePI) * len) - 1;
 
 			// Now draw the winning name
-			ctx.textAlign = "left";
+			ctx.textAlign = "center";
 			ctx.textBaseline = "middle";
 			ctx.fillStyle = blackHex;
-			ctx.font = "2em Arial";
+			ctx.font = "1.5em Noto Sans KR";
             winner = wheel.segments[i] || 'Choose at least 1 Venue';
-			ctx.fillText(winner, centerSize + 20, centerY);
+			ctx.fillText(winner, centerY, 380);
+
+			console.log(wheel.segments[i])
 		},
 
 		drawSegment : function(key, lastAngle, angle) {
@@ -259,11 +370,11 @@
                 angle,
                 i;
 
-			ctx.lineWidth    = 1;
+			ctx.lineWidth    = 2;
 			ctx.strokeStyle  = blackHex;
 			ctx.textBaseline = "middle";
 			ctx.textAlign    = "right";
-			ctx.font         = "1em Arial";
+			ctx.font         = "1em Noto Sans KR";
 
 			for (i = 1; i <= len; i++) {
 				angle = doublePI * (i / len) + angleCurrent;
@@ -296,8 +407,8 @@
             $venueName = $('#name'),
             $venueType = $('#types'),
             venueTypes = [],
-            $list = $('<ul/>'),
-            $types = $('<ul/>'),
+            $list = $('<ul class="list-group" />'),
+            $types = $('<ul class="list-group" />'),
             $filterToggler = $('#filterToggle'),
             arrayUnique = function(a) {
                 return a.reduce(function(p, c) {
@@ -308,9 +419,9 @@
 
 		$.each(venues, function(index, venue) {
 			$list.append(
-		        $("<li/>")
+		        $('<li class="list-group-item" />')
 		        .append(
-	                $("<input />").attr({
+	                $('<input class="form-check-input me-1" />').attr({
                          id:    'venue-' + index
                         ,name:  venue.name
                         ,value: venue.name
@@ -343,9 +454,9 @@
 		});
         $.each(arrayUnique(venueTypes), function (index, venue){
             $types.append(
-		        $("<li/>")
+		        $('<li class="list-group-item" />')
 		        .append(
-	                $("<input />").attr({
+	                $('<input class="form-check-input me-1" />').attr({
                          id:    'venue-type-' + index
                         ,name:  venue
                         ,value: venue
