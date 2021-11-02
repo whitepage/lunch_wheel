@@ -1,4 +1,6 @@
 (function ($){
+	function shuffle(array) { array.sort(() => Math.random() - 0.5); } 
+	
     var venues =  [
         {
 			"name": "등촌샤브칼국수",
@@ -112,6 +114,8 @@
 		  }
     ];
     
+	shuffle(venues);
+	
     // Helpers
     var blackHex = '#333',
         whiteHex = '#fff',
