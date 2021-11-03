@@ -1,5 +1,5 @@
 (function ($){
-	function shuffle(array) { array.sort(() => Math.random() - 0.5); } 
+	function shuffle(array) { array.sort(() => Math.random()); } 
 	
     var venues =  [
 		{
