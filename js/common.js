@@ -1,6 +1,5 @@
 (function ($){
-	function shuffle(array) { array.sort(() => Math.random() - 0.5); } 
-	
+	function shuffle(array) { array.sort(() => Math.random() - 0.5); }
     var venues =  [
 		{
 			"name": "등촌샤브칼국수",
@@ -319,6 +318,8 @@
                 if (console){ 
 					console.log((wheel.frames / duration * 1000) + " FPS");
 			 	}
+
+				wheel.end();
 			}
 
 			/*
@@ -338,7 +339,7 @@
 				$.extend(wheel, optionList);
 
 			} catch (exceptionData) {
-				alert('Wheel is not loaded ' + exceptionData);
+				// alert('Wheel is not loaded ' + exceptionData);
 			}
 
 		},
@@ -378,6 +379,11 @@
 			wheel.seg_color = seg_color;
 
 			wheel.draw();
+		},
+
+		end : function(i) {
+			$("#desc").show();
+			RestartConfetti();
 		},
 
 		draw : function() {
@@ -428,7 +434,8 @@
             winner = wheel.segments[i] || 'Choose at least 1 Venue';
 			ctx.fillText(winner, centerY, 380);
 
-			// console.log(wheel.segments[i]);
+			//console.log(wheel.segments[i]);
+			$("#desc").html(venues[i].desc);
 		},
 
 		drawSegment : function(key, lastAngle, angle) {
