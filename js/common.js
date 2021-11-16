@@ -273,6 +273,8 @@
 		centerY : 180,
 
 		spin : function() {
+			$("#desc").hide();
+			DeactivateConfetti();
 			// Start the wheel only if it's not already spinning
 			if (wheel.timerHandle == 0) {
 				wheel.spinStart = new Date().getTime();
