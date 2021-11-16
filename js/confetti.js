@@ -202,7 +202,10 @@ function RestartConfetti() {
         animationComplete = false;
         InitializeConfetti();
     }, 100);
-
+    
+    setTimeout(function(){
+        DeactivateConfetti();
+    }, 5000)
 }
 
 window.requestAnimFrame = (function () {
