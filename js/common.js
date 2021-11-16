@@ -273,7 +273,7 @@
 		centerY : 180,
 
 		spin : function() {
-			$("#desc").hide();
+			//$("#desc").hide();
 			DeactivateConfetti();
 			// Start the wheel only if it's not already spinning
 			if (wheel.timerHandle == 0) {
@@ -384,8 +384,9 @@
 		},
 
 		end : function(i) {
-			$("#desc").show();
+			//$("#desc").show();
 			RestartConfetti();
+			$('#myModal').modal('show');
 		},
 
 		draw : function() {
@@ -437,7 +438,10 @@
 			ctx.fillText(winner, centerY, 380);
 
 			//console.log(wheel.segments[i]);
-			$("#desc").html(venues[i].desc);
+			//$("#desc").html(venues[i].desc);
+
+			$('#myModalLabel').text(venues[i].name);
+			$(".modal-body").html(venues[i].desc);
 		},
 
 		drawSegment : function(key, lastAngle, angle) {
