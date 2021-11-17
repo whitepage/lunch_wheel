@@ -440,8 +440,16 @@
 			//console.log(wheel.segments[i]);
 			//$("#desc").html(venues[i].desc);
 
-			$('#myModalLabel').text(venues[i].name);
-			$(".modal-body").html(venues[i].desc);
+			$('#myModalLabel').text(winner);
+
+			function isName(element) {
+				if(element.name === winner) {
+					return true;
+				}
+			}
+			
+			let win = venues.filter(isName);
+			$(".modal-body").html(win[0].desc);
 		},
 
 		drawSegment : function(key, lastAngle, angle) {
