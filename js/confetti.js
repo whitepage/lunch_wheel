@@ -205,7 +205,7 @@ function RestartConfetti() {
     
     setTimeout(function(){
         DeactivateConfetti();
-    }, 5000)
+    }, 3000)
 }
 
 window.requestAnimFrame = (function () {
