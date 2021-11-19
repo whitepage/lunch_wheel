@@ -208,6 +208,10 @@ function RestartConfetti() {
     }, 3000)
 }
 
+function goMaps(url) {
+    window.open(url);
+}
+
 window.requestAnimFrame = (function () {
     return window.requestAnimationFrame || 
     window.webkitRequestAnimationFrame || 

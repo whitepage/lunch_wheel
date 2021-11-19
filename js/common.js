@@ -492,6 +492,7 @@
 			
 			let win = venues.filter(isName);
 			$(".modal-body").html(win[0].desc);
+			$("#goMaps").attr("onclick", 'goMaps("'+win[0].map+'")');
 		},
 
 		drawSegment : function(key, lastAngle, angle) {
