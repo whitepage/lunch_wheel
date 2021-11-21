@@ -25,11 +25,25 @@
     </div>
 
     <div id="venues">
-        <h1>식당 이름 <input type="checkbox" class="form-check-input checkAll" checked /></h1>
-        <div id="name"></div>
-        
-        <h2>음식 종류 <input type="checkbox" class="form-check-input checkAll" checked /></h2>
-        <div id="types"></div>
+        <div class="venues_layer">
+            <nav class="mb-3">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-bs-controls="nav-home" aria-bs-selected="true">식당 이름</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-bs-controls="nav-profile" aria-bs-selected="false">음식 종류</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-bs-labelledby="nav-home-tab">    
+                    <h1>식당 이름 <!-- input type="checkbox" class="form-check-input checkAll" checked / --></h1>
+                    <div id="name"></div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-bs-labelledby="nav-profile-tab">
+                    <h1>음식 종류 <!-- input type="checkbox" class="form-check-input checkAll" checked / --></h1>
+                    <div id="types"></div>
+                </div>
+            </div>
+        </div>
+        <div class="venus_dimmed"></div>
     </div>
 
     <div id="wheel">

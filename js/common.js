@@ -573,6 +573,7 @@
 		}
 	};
     $(function() {
+		$venues
         var $venues = $('#venues'),
             $venueName = $('#name'),
             $venueType = $('#types'),
@@ -580,6 +581,7 @@
             $list = $('<ul class="list-group" />'),
             $types = $('<ul class="list-group" />'),
             $filterToggler = $('#filterToggle'),
+            $filterToggler2 = $('.venus_dimmed'),
             arrayUnique = function(a) {
                 return a.reduce(function(p, c) {
                     if (p.indexOf(c) < 0) { p.push(c); }
@@ -663,12 +665,20 @@
 		});
 
 		wheel.update();
-        $venues.slideUp().data("open",false);
+        $venues.slideUp(0).data("open",false);
+        $venues.css('opacity',1);
         $filterToggler.on("click", function (){
             if($venues.data("open")){
-                $venues.slideUp().data("open",false);
+                $venues.slideUp(300).data("open",false);
             }else{
-                $venues.slideDown().data("open",true);
+                $venues.slideDown(300).data("open",true);
+            }
+        });
+        $filterToggler2.on("click", function (){
+            if($venues.data("open")){
+                $venues.slideUp(300).data("open",false);
+            }else{
+                $venues.slideDown(300).data("open",true);
             }
         });
         

@@ -10,13 +10,13 @@ li {list-style: none;}
 
 #filterToggle {
     padding: 10px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .menu {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-top: -20px;
     margin-left: 0;
     background-color: transparent;
@@ -61,12 +61,45 @@ li {list-style: none;}
   }
 
 
-#venues{
-    padding: 20px;
-} 
-#venues h1, 
+#venues {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.venus_dimmed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+.venues_layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 16px 16px 0 0;
+}
+#venues h1 { font-size: 24px; font-weight: 700; line-height: 160%; margin-bottom: 10px; }
 #venues h2 { font-weight: 700; line-height: 160%; margin-bottom: 10px; }
 #venues input + label { margin-left: 10px; display: inline-block; }
+#venues .tab-content { 
+  overflow: hidden;
+  overflow-y: auto; 
+  height: 100%;
+  padding-bottom: 40px;
+}
 #venues ul li { position: relative; min-height: 46px; }
 #venues ul li input { position: absolute; top: 10px; left: 15px; }
 #venues ul li label { padding-left: 20px; width: 100%; display: block; }
