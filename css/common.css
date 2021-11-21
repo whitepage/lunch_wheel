@@ -112,7 +112,7 @@ li {list-style: none;}
     min-width: 320px;
     width: 100%;
     text-align: center;
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 
 #desc {
