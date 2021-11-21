@@ -99,6 +99,7 @@ li {list-style: none;}
   overflow-y: auto; 
   height: 100%;
   padding-bottom: 40px;
+  padding-right: 5px;
 }
 #venues ul li { position: relative; min-height: 46px; }
 #venues ul li input { position: absolute; top: 10px; left: 15px; }
